@@ -1,0 +1,16 @@
+  418  git add .
+  419  git commit -m "1 commit"
+  420  touch main_test.txt
+  421  git add .
+  422  git commit -m "2 commit"
+  423  git checkout -b develop
+  424  touch develop_test.txt
+  425  git add .
+  426  git commit -m "3 commit"
+  427  echo someText > develop_test.txt
+  428  git status
+  429  git add .
+  430  git commit -m "4 commit"
+  431  git checkout main
+  432  git merge develop
+  433  git log
